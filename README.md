@@ -6,15 +6,15 @@ To run this container image, see example commands below:
 
 docker container run -it kyleatpanw/pan_api_python_intro:v1
 
-To run the container and delete the container when you're done use the following command as an example:
+To run and delete the container when you're done use the following command as an example:
 
 docker container run -it --rm kyleatpanw/pan_api_python_intro:v1
 
-To run the container and copy your working directory to the container, and delete the container when you're done, use the example:
+To run and copy your working directory to the container, and delete the container when you're done, use the example:
 
 docker run -it --rm -v $(pwd):/home/ -w /home/ kyleatpanw/pan_api_python_intro:v1
 
-To run the container and copy a folder or directory to the container, and delete the container when you're done, use the example:
+To run and copy a folder or directory to the container, and delete the container when you're done, use the example:
 
 docker run -it --rm -v /Users/blahblah/templates:/home -w /home kyleatpanw/pan_api_python_intro:v1
 
